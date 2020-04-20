@@ -1,5 +1,6 @@
-Readme
+Visca Web Frontend Test
 ======
+
 
 ## Estructure
 I've used BEM and ITCSS for the structure of the TEST. I've not used all the ITCSS layers. but this is the first step in order to have a clear architecture in the CSS part. 
