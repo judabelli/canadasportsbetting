@@ -1,0 +1,143 @@
+// Component Header
+$c-header--display:             table !default;
+$c-header--width:               100% !default;
+$c-header__item--display:       table-cell !default;
+$c-header__image--margin:       10% !default;
+
+// Component Navigation
+$c-navigation--display:                      flex !default;
+$c-navigation--direction:                    column !default;
+$c-navigation--direction-desktop:            row !default;
+$c-navigation--alignment-desktop:            center !default;
+$c-navigation--justified-desktop:            space-between !default;
+$c-navigation--padding:                      15px 30px !default;
+$c-navigation__item--text-alignment:          right !default;
+$c-navigation__item--text-alignment-desktop:  left !default;
+$c-navigation__link--color:                   #48484b !default;
+$c-navigation__link--font-size:               14px !default;
+$c-navigation__link--decoration:              underline !default;
+$c-navigation__title--font-size:              22px !default;
+$c-navigation__title--font-size-desktop:      42px !default;
+$c-navigation__title--text-alignment:         right !default;
+$c-navigation__title--display:                flex !default;
+$c-navigation__title--justified:              center !default;
+
+// Component Icon
+$c-icon--width:                     55px !default;
+$c-icon--margin-right:              15px !default;
+$c-icon--margin-display:            none !default;
+$c-icon--margin-display--desktop:   inline-flex !default;
+
+// Component Card
+$c-card--padding:                           20px !default;
+$c-card--padding-inversed:                  10px !default;
+$c-card--text-align:                        center!default;
+$c-card--box-shadow-color:                  rgba(0, 0, 0, 0.5) !default;
+$c-card--box-shadow-width:                  0  10px 25px -10px !default;
+$c-card--background-color:                  #fff !default;
+$c-card--border-radius:                     5px !default;
+$c-card--font-size-inversed:                14px !default;
+$c-card--margin:                            10px !default;
+$c-card--transform:                         scale(1) !default;
+$c-card--transform-hover:                   scale(1.01) !default;
+$c-card--transform-hover-inversed:          scale(1.1) !default;
+$c-card--transition:                        all 0.3s ease 0s !default;
+$c-card--position:                          relative !default;
+$c-card--number-position:                   $c-card--position !default;
+$c-card--number-display:                    block !default;
+$c-card--number-font-size-ordered:          0 !default;
+$c-card--number-padding-ordered:            10px !default;
+$c-card--number-text-align:                 left !default;
+$c-card--number-padding:                    1rem !default;
+$c-card--number-padding-desktop:            0 30px 0 0 !default;
+$c-card--number-font-size:                  26px !default;
+$c-card--number-font-weight:                800 !default;
+$c-card--number-color:                      #484848 !default;
+$c-card__link--positioning:                 absolute !default;
+$c-card__link--top:                         0 !default;
+$c-card__link--left:                        0 !default;
+$c-card__link--right:                       0 !default;
+$c-card__link--bottom:                      0 !default;
+$c-card__link--zindex:                      1 !default;
+$c-card__text--color:                       #434bfe !default;
+$c-card__text--display:                     flex !default;
+$c-card__text--direction-inversed:          column !default;
+$c-card__text--font-size:                   0 !default;
+$c-card__text--font-size-mobile:            12px !default;
+$c-card__text--font-size-mobile-desktop:    16px !default;
+$c-card__text--padding-right:               45px !default;
+$c-card__text--padding-right-desktop:       0 !default;
+$c-card__text--margin-desktop:              0 20px !default;
+$c-card__text--margin-inversed:             20px 0!default;
+$c-card__text--font-size-desktop:           16px !default;
+$c-card__text--paragraph-direction:         $c-card__text--direction-inversed !default;
+$c-card__text--paragraph-display-desktop:   inline-block !default;
+$c-card__image-display:                     block !default;
+$c-card__image-maxwidth:                    80px !default;
+$c-card__image-maxwidth-desktop:            110px !default;
+$c-card__image-margin-inversed:             0 auto !default;
+$c-card__button-background:                 #f44337 !default;
+$c-card__button-color:                      #fff !default;
+$c-card__button-padding:                    10px 20px !default;
+$c-card__button-font-size:                  0 !default;
+$c-card__button-font-size-desktop:          16px !default;
+$c-card__button-positioning:                absolute !default;
+$c-card__button-positioning-desktop:        relative !default;
+$c-card__button-top:                        0 !default;
+$c-card__button-bottom:                     0 !default;
+$c-card__button-right:                      0 !default;
+$c-card__button-radius:                     5px !default;
+$c-card__button-icon-color:                 #fff !default;
+$c-card__button-icon-content:               '\f054' !default;
+$c-card__button-icon-display:               inline-block !default;
+$c-card__button-icon-font:                  "Font Awesome 5 Free" !default;
+$c-card__button-icon-font-size:             12px !default;
+$c-card__button-icon-font-weight:           900 !default;
+$c-card__button-icon-padding-left-desktop:  15px !default;
+$c-card__button-marginleft:                 auto !default;
+$c-card__button-margin-inverse:             10px auto 20px !default;
+$c-card__button-display:                    flex !default;
+$c-card__button-alignment:                  center !default;
+$c-card--right-margin:                      auto !default;
+$c-card--right-margin--inversed:            0 auto !default;
+$c-card--right-direction-inversed:          $c-card__text--direction-inversed !default;
+
+
+// Component Reviews
+$c-reviews--margin:           0 30px !default;
+$c-reviews--margin-desktop:   0 !default;
+$c-reviews--zindex:           11 !default;
+
+// Component Section
+$c-section--text-align :        center !default;
+$c-section--padding :           20px 0 !default;
+$c-section__link--color :       #2738f1 !default;
+$c-section__link--decoration :  underline !default;
+
+// Component Switch
+
+$c-switch--positioning :              relative !default;
+$c-switch--display :                  inline-block !default;
+$c-switch--width :                    60px !default;
+$c-switch--height :                   34px !default;
+$c-switch__input--opacity :           0 !default;
+$c-switch__input--width :             0 !default;
+$c-switch__input--height :            0 !default;
+$c-switch--checked-color:             #f44337 !default;
+$c-switch--checked-box-shadow-width:  0 0 1px !default;
+$c-switch--checked-translation :      translateX(26px) !default;
+$c-switch_slider--positioning  :      absolute !default;
+$c-switch_slider--top :               0 !default;
+$c-switch_slider--left :              0 !default;
+$c-switch_slider--bottom :            0 !default;
+$c-switch_slider--right :             0 !default;
+$c-switch_slider--background :        #ccc !default;
+$c-switch_slider--transition:         .4s !default;
+$c-switch_slider--radius:              35px !default;
+$c-switch_slider-round--radius:        50% !default;
+$c-switch_slider-round--background:    #fff !default;
+$c-switch_slider-round--bottom:        4px !default;
+$c-switch_slider-round--left:          4px !default;
+$c-switch_slider-round--size:          26px !default;
+$c-switch_slider-round--positioning:   absolute !default;
+

@@ -1,0 +1,33 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $s-font-family;
+  font-weight: $s-font-weight;
+  margin: $s-margin;
+  padding:$s-padding;
+  position: $s-position;
+  min-height: $s-body-min-height;
+}
+
+header {
+ background-color: $s-header-background;
+ color: $s-header-color;
+}
+a {
+  color: $s-link-color;
+  text-decoration: $s-link-decoration;
+}
+
+p {
+  margin:0;
+}
+
+h1 {
+  text-transform: $s-h1-transform;
+  position: $s-position;
+}
+

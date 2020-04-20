@@ -1,0 +1,44 @@
+@import "_variables";
+
+.c-switch {
+  position: $c-switch--positioning;
+  display: $c-switch--display;
+  width: $c-switch--width;
+  height: $c-switch--height;
+  input {
+    opacity: $c-switch__input--opacity;
+    width: $c-switch__input--width;
+    height: $c-switch__input--height;
+    &:checked + .c-switch__slider {
+      background-color: $c-switch--checked-color;
+    }
+    &:focus + .c-switch__slider {
+      box-shadow: $c-switch--checked-box-shadow-width $c-switch--checked-color;
+    }
+    &:checked + .c-switch__slider:before {
+      transform: $c-switch--checked-translation;
+    }
+  }
+  .c-switch__slider {
+      position: $c-switch_slider--positioning;
+      cursor: pointer;
+      top: $c-switch_slider--top;
+      left: $c-switch_slider--left;
+      right: $c-switch_slider--right;
+      bottom: $c-switch_slider--bottom;
+      background-color: $c-switch_slider--background;
+      transition: $c-switch_slider--transition;
+      border-radius: $c-switch_slider--radius;
+    &:before {
+      position: $c-switch_slider-round--positioning;
+      content: "";
+      height: $c-switch_slider-round--size;
+      width: $c-switch_slider-round--size;
+      left: $c-switch_slider-round--left;
+      bottom: $c-switch_slider-round--bottom;
+      background-color: $c-switch_slider-round--background;
+      transition: $c-switch_slider--transition;
+      border-radius: $c-switch_slider-round--radius;
+    }
+  }
+}

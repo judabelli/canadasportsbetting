@@ -1,0 +1,12 @@
+@import "_variables";
+
+.c-header {
+  display: $c-header--display;
+  width: $c-header--width;
+  .c-header__item{
+    display: $c-header__item--display;
+  }
+  .c-header__image {
+    margin-left: $c-header__image--margin;
+  }
+}

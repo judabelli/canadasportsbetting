@@ -1,0 +1,14 @@
+@import "variables";
+
+.o-container {
+  max-width: $o-container--max-width;
+  margin: $o-container--margin;
+}
+
+.o-container--full {
+  width: $o-container--fullwidth;
+  padding-right: $o-container--padding;
+  padding-left: $o-container--padding;
+  margin-right: $o-container--margin;
+  margin-left: $o-container--margin;
+}

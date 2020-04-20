@@ -1,0 +1,12 @@
+@import "_variables";
+
+.c-icon {
+  &.c-icon__canada {
+    width: $c-icon--width;
+    margin-right: $c-icon--margin-right;
+    display: $c-icon--margin-display;
+    @include desktop {
+      display: $c-icon--margin-display--desktop;
+    }
+  }
+}

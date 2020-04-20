@@ -1,0 +1,47 @@
+@import "_variables";
+
+.c-reviews {
+  margin: $c-reviews--margin;
+  z-index: $c-reviews--zindex;
+  @include desktop {
+    margin: $c-reviews--margin-desktop;
+    .grid-list & {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+  }
+  .c-rating {
+  margin: 0 30px;
+  display: none;
+  @include desktop {
+    display: inline-block;
+  };
+
+  .fa-star {
+    color:#f7931c;
+    font-size: 10px;
+  }
+}
+  .c-reviews__link {
+    color: #3a3a3a;
+    text-decoration: underline;
+    font-size: 0;
+    text-transform: capitalize;
+    .mobile {
+      font-size: 12px;
+    }
+    @include desktop {
+      font-size: 14px;
+      .mobile {
+        font-size: 14px;
+      }
+      .grid-list & {
+        font-size: 14px;
+        color: grey;
+         .mobile {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

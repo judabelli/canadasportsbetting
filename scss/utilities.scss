@@ -1,0 +1,16 @@
+.u-ml-2 {
+  margin-left: 10px;
+}
+.u-py-4 {
+  padding:3rem;
+}
+.u-align-center {
+    align-items: center;
+}
+.u-hidden-sm {
+  display: none;
+  @include desktop {
+    display: flex;
+    align-items: center;
+  }
+}

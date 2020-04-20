@@ -1,0 +1,129 @@
+@import "_variables";
+
+.c-card {
+  padding: $c-card--padding;
+  text-align: $c-card--text-align;
+  box-shadow: $c-card--box-shadow-color $c-card--box-shadow-width;
+  background-color: $c-card--background-color;
+  border-radius: $c-card--border-radius;
+  margin: $c-card--margin;
+  transform: $c-card--transform;
+  transition: $c-card--transition;
+  position: $c-card--position;
+  &:before {
+    content: attr(data-number);
+    display: $c-card--number-display;
+    position: $c-card--number-position;
+    text-align: $c-card--number-text-align;
+    padding-right: $c-card--number-padding;
+    font-size: $c-card--number-font-size;
+    font-weight: $c-card--number-font-weight;
+    color: $c-card--number-color;
+    @include desktop {
+      padding: $c-card--number-padding-desktop;
+    }
+  }
+  .alphabetically-sorted &:before {
+      font-size: $c-card--number-font-size-ordered;
+      padding:$c-card--number-padding-ordered;
+  }
+  &:hover {
+      transform:$c-card--transform-hover;
+  }
+  .c-card__link {
+      position: $c-card__link--positioning;
+      top: $c-card__link--top;
+      left:$c-card__link--left;
+      right: $c-card__link--right;
+      bottom: $c-card__link--bottom;
+      z-index: $c-card__link--zindex;
+    }
+  .c-card--text {
+    color: $c-card__text--color;
+    display: $c-card__text--display;
+    font-size: $c-card__text--font-size;
+    padding-right: $c-card__text--padding-right;
+    @include desktop {
+      margin: $c-card__text--margin-desktop;
+      font-size: $c-card__text--font-size-desktop;
+      padding-right: $c-card__text--padding-right-desktop;
+      .grid-list & {
+        margin: $c-card__text--margin-inversed;
+        flex-direction: $c-card__text--direction-inversed;
+      }
+    }
+    > p {
+      display: $c-card__text--display;
+      flex-direction: $c-card__text--paragraph-direction;
+      @include desktop {
+        display: $c-card__text--paragraph-display-desktop;
+      }
+    }
+    .show-in-mobile {
+      font-size: $c-card__text--font-size-mobile;
+      @include desktop {
+        font-size: $c-card__text--font-size-mobile-desktop;
+      }
+    }
+  }
+  .c-card__image {
+    max-width: $c-card__image-maxwidth;
+    display: $c-card__image-display;
+    @include desktop {
+      max-width: $c-card__image-maxwidth-desktop;
+      .grid-list & {
+        margin: $c-card__image-margin-inversed;
+      }
+    }
+  }
+  .c-card__button {
+    background-color: $c-card__button-background;
+    color: $c-card__button-color;
+    padding: $c-card__button-padding;
+    font-size: $c-card__button-font-size;
+    position: $c-card__button-positioning;
+    right: $c-card__button-right;
+    top: $c-card__button-top;
+    bottom: $c-card__button-bottom;
+    display: $c-card__button-display;
+    align-items: $c-card__button-alignment;
+    margin-left: $c-card__button-marginleft;
+    border-top-right-radius: $c-card__button-radius;
+    border-bottom-right-radius: $c-card__button-radius;
+    @include desktop {
+      font-size: $c-card__button-font-size-desktop;
+      position: $c-card__button-positioning-desktop;
+      border-radius: $c-card__button-radius;
+      .grid-list & {
+        margin: $c-card__button-margin-inverse;
+      }
+    }
+    &:after {
+      content: $c-card__button-icon-content;
+      display: $c-card__button-icon-display;
+      color:$c-card__button-icon-color;
+      font-size: $c-card__button-icon-font-size;
+      font-weight: $c-card__button-icon-font-weight;
+      font-family: $c-card__button-icon-font;
+      @include desktop {
+        padding-left: $c-card__button-icon-padding-left-desktop;
+      }
+    }
+  }
+  .grid-list & {
+    padding: $c-card--padding-inversed;
+    font-size: $c-card--font-size-inversed;
+    &:hover {
+        transform: $c-card--transform-hover-inversed;
+    }
+  }
+  .c-card--right {
+    margin-left: $c-card--right-margin;
+    @include desktop {
+      .grid-list & {
+        flex-direction: $c-card--right-direction-inversed;
+        margin:$c-card--right-margin--inversed;
+      }
+    }
+  }
+}

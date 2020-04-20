@@ -1,0 +1,28 @@
+@import "variables";
+
+
+.o-grid-container {
+  padding: $o-grid-container--padding;
+  margin: $o-grid-container--margin;
+  @include desktop() {
+    margin: $o-grid-container--margin-desktop;
+  }
+  &::before {
+    background-image: $o-grid-container--background;
+    background-color: $o-grid-container--background-color;
+    background-position:  $o-grid-container--background-position;
+    background-size: $o-grid-container--background-size;
+    background-repeat: $o-grid-container--background-repeat;
+    content: "";
+    display: block;
+    position: $o-grid-container--background-positioning;
+    top: $o-grid-container--background-top;
+    bottom: $o-grid-container--background-bottom;
+    left: $o-grid-container--background-left;
+    right: $o-grid-container--background-right;
+    z-index: $o-grid-container--background-zindex ;
+    @include desktop{
+      background-position: $o-grid-container--background-position--desktop;
+    }
+  }
+}

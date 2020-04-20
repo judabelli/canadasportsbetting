@@ -1,0 +1,10 @@
+@import "_variables";
+
+.c-section {
+  text-align: $c-section--text-align;
+  padding: $c-section--padding;
+  .c-section__link {
+    color: $c-section__link--color;
+    text-decoration: $c-section__link--decoration;
+  }
+}
